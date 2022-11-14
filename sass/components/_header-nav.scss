@@ -1,0 +1,45 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.header__nav {
+    display: flex; 
+}
+
+.studio-active,
+.portfolio-active {
+    color: $accent-color;
+}
+
+.studio-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    top: 44.5px;
+}
+
+.portfolio-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    top: 44.5px;
+}
